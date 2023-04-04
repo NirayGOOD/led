@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$font-stack_1: 'Poppins' , normal;
+$font-stack_2: 'Playfair Display' , sans-serif;
+
+@mixin fontz($f){
+    font-size: $f;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+a{
+    font: 100% $font-stack_1;
+    font-weight: 400;
+    @include fontz(20px);
+    line-height: 30px;
+    color: #2E3A4B;
+    text-decoration: none;
+}
+
+.sec-1{
+    background: linear-gradient(180deg, #E6F7FF 0%, rgba(255, 255, 255, 0) 100%);
+
+    &__navigation{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        &__arrow{
+            margin-bottom: 3px;
+        }
+
+        &__href{
+            margin-right: 30px;
+
+            &_last{
+                margin-right: auto;
+            }
+        }
+
+        &__user{
+            margin-right: 30px;
+
+            &_last{
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+.sec-1_2{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__main-text{
+        font: 100% $font-stack_2;
+        font-size: 60px;
+        line-height: 80px;
+        background: linear-gradient(93.87deg, #2260FF 5.86%, #862BE1 51.33%, #FA00FF 90.93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+
+        margin-bottom: 30px;
+    }
+
+    &__second-text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    &__button{
+        background: #5138EE;
+        border: 1px solid #5138EE;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 200px;
+        height: 55px;
+        margin-right: 30px;
+        transition: all 500ms;
+
+        color: #FFFFFF;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+
+        &_last{
+            margin-right: auto;
+        }
+
+        &:hover{
+            background: none;
+            border: 1px solid #5138EE;
+            color: #5138EE;
+            transition: all 500ms;
+        }
+    }
+}
+
+.sec-2{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+        &__button{
+            background: #F3F6F8;
+            box-shadow: 0px 0px 20px 5px #DEDEDE;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 1s;
+
+            align-items: center;
+            flex-direction: row;
+
+            margin-right: 30px;
+
+            width: 270px;
+            height: 165px;
+
+            &:hover{
+                scale: 1.1;
+                transition: all 1s;
+            }
+
+            &__text{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 30px;
+                color: rgba(0, 0, 0, 0.6);
+                margin-top: auto;
+
+            }
+
+            &_last{
+
+                margin-right: 0px;
+            }
+        }
+}
+
+.help{
+    width: 720px;
+}
+
+.sec-3 {
+    margin-top: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__div1 {
+        margin-bottom: 20px;
+
+        &__live{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 30px;
+            color: #FA00FF;
+            margin-bottom: 0;
+            margin-bottom: -10px;
+        }
+    }
+
+    &__div2{
+
+
+        &__main{
+
+
+            &__text{
+                font-family: 'Playfair Display';
+                font-size: 55px;
+                line-height: 60px;
+                background: linear-gradient(2deg, #2260FF 5.86%, #862BE1 51.33%, #FA00FF 90.93%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin: 0;
+            }
+        }
+
+        &__p{
+            margin-top: 30px;
+
+            &__text{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.adapptive-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.last{
+    margin: 0;
+}
+
+.sec-4{
+    margin-top: 50px;
+
+    &__tabular-1{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        box-shadow: 0px 0px 20px 5px #DEDEDE;
+        border-radius: 10px;
+        margin-left: 30px;
+
+        &__button{
+            display: flex;
+            flex-direction: row;
+            width: 250px;
+
+            &__text{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 20px;
+                color: #2E3A4B;
+                margin: 0;
+            }
+
+            &__1{
+                border-radius: 100px;
+                border: none;
+                background: #F3F6F8;
+                box-shadow: -1px 3px 7px rgba(171, 171, 171, 0.62);
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+                margin-top: 26px;
+            }
+
+            &__2{
+                border-radius: 100px;
+                border: none;
+                background: #F3F6F8;
+                box-shadow: -1px 3px 7px rgba(171, 171, 171, 0.62);
+                width: 113px;
+                height: 40px;
+                margin-left: 17px;
+                margin-top: 21px;
+
+            }
+        }
+
+        &__text{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 21px;
+            color: #000000;
+        }
+
+        &__author{
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+
+            &__text{
+                margin-left: 10px;
+
+
+                &__name{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #000000;
+                    margin: 0;
+                    margin-bottom: 2px;
+                }
+
+                &__tag{
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 12px;
+                    color: #000000;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.sec-5{
+    margin-top: 120px;
+
+    &__basment{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+
+        &__logo{
+            margin-top: 0;
+        }
+
+        &__text1{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+        }
+
+        &__text2-1{
+            font-family: 'Playfair Display';
+            font-size: 30px;
+            line-height: 40px;
+            color: #000000;
+            margin-top: 0;
+        }
+
+        &__text2-2{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #2E3A4B;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+
+    body{
+        margin: 0 auto;
+        max-width: 1000px;
+
+    }
+
+    .sec-1{
+        width: 1024px;
+    }
+
+    .adapptive-row{
+        flex-direction: column;
+    }
+
+    .sec-4__tabular-1{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .sec-1{
+        width: 768px;
+    }
+    
+    body{
+        margin: 0 auto;
+        max-width: 768px;
+
+    }
+
+    .opp{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .sec-1__navigation{
+        flex-direction: column;
+    }
+
+    .adapptive-row-a{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sec-1__navigation__href{
+        margin-top: 15px;
+        
+    }
+    .sec-1__navigation__href_last{
+        margin-bottom: 15px;
+    }
+
+    .sec-2{
+        flex-direction: column;
+
+        &__button{
+            margin-bottom: 50px;
+
+            &_last{
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .sec-3{
+        margin-left: 30px;
+    }
+
+    .sec-5__basment{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec-5__basment__text2-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sec-5__basment__text2-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px){
+
+    body{
+        margin: 0 auto;
+        max-width: 425px;
+
+    }
+    .sec-1{
+        width: 425px;
+    }
+
+    .adapptive-row-button{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+    .sec-1_2__main-text{
+        width: 425px;
+        margin-left: 10px;
+    }
+    .sec-1_2__second-text{
+        width: 425px;
+        margin-left: 10px;
+    }
+
+    .sec-1_2__button{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .help{
+        width: 0;
+    }
+}
